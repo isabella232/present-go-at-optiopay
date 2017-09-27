@@ -6,11 +6,11 @@
 
 ## OptioPays Special Requirements
 
-* We manage money and private data |
-* Lack of auditing could kill us |
-* Lack of data privacy could kill us |
-* Security is **very** important |
-* A dynamic language like JavaScript doesn't feel right |
+- We manage money and private data |
+- Lack of auditing could kill us |
+- Lack of data privacy could kill us |
+- Security is **very** important |
+- A dynamic language like JavaScript doesn't feel right |
 
 ---
 
