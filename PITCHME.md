@@ -1,8 +1,6 @@
 # Go @ OptioPay
 
----
-
-## Show OptioPay triangle: Recipient - Issuer - Advertiser
+---?image=assets/OptioPay-Business-Model.png
 
 ---
 
