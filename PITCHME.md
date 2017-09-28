@@ -1,5 +1,9 @@
 # Go @ OptioPay
 
+<h5 class="fragment">Ole Bulbuk: Senior Software Engineer</h5>
+<h6 class="fragment">Back end guy since the ninties; Gopher for 2 years</h6>
+
+
 ---?image=assets/OptioPay-Business-Model.png
 
 ---
@@ -16,6 +20,8 @@
 
 ## Event Sourcing With Apache Kafka
 
+- All data is stored as events |
+- Events can't be modified but current state can change due to new events |
 - Enables auditing |
 - Decouples services |
 
@@ -26,13 +32,16 @@
 - Abstracts away reading of Kafka topics |
 - Keeps track of client position within Kafka topic |
 - Helps writing to Kafka topics |
+- Composes HTTP handlers |
+- Service implementations have to implement interfaces | 
+- More than 40 services built on top of Micro |
+- Most of them store current state in a PostgreSQL DB |
 
 ---
 
-## Go Services Use OptioPay Micro
+## Example Go Service that Uses Micro
 
-- XX services built on top of Micro
-- Most of them store current state in a PostgreSQL DB
+Show code from my onboarding woodblock service.
 
 ---
 
