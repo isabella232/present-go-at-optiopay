@@ -8,7 +8,7 @@
 
 ---
 
-## OptioPays Special Requirements
+## Special Requirements
 
 - We manage money and private data |
 - Lack of auditing could kill us |
@@ -18,7 +18,7 @@
 
 ---
 
-## Event Sourcing With Apache Kafka
+## Event Sourcing: Apache Kafka
 
 - All data is stored as events |
 - Events can't be modified:  state changes due to NEW events |
@@ -27,7 +27,7 @@
 
 ---
 
-## OptioPay Mircro Service Framework: Micro
+## Mircro Service Framework
 
 - Abstracts away reading of Kafka topics |
 - Keeps track of client position within Kafka topic |
@@ -39,7 +39,7 @@
 
 ---
 
-## Example Go Service that Uses Micro
+## Example
 
 Show code from my onboarding woodblock service.
 
