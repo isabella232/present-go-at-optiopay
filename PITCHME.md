@@ -39,8 +39,6 @@
 
 ---?code=go/main.go
 
-## Woodblock service: main.go
-
 @[1-8](the main file has to be in package main and needs some imports)
 @[10-11](the version is set by a build script)
 @[13-14](in main we first create an instance of our internal service)
@@ -49,8 +47,6 @@
 @[27-30](and run it hopefully without any error)
 
 ---?code=go/service.go
-
-## Woodblock service: service.go
 
 @[1-10](the service is usually in its own package and needs some imports, too)
 @[18-24](NewService returnes a service ready to use)
