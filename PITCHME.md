@@ -21,7 +21,7 @@
 ## Event Sourcing: Apache Kafka
 
 - All data is stored as events |
-- Events can't be modified:  state changes due to NEW events |
+- Events are immutable: NEW events change state |
 - This enables auditing |
 - Persistent messaging decouples services |
 
@@ -37,11 +37,13 @@
 - More than 40 services built on top of Micro |
 - Most of them store current state in a PostgreSQL DB |
 
----
+---?code=go/main.go
 
-## Example
-
-Show code from my onboarding woodblock service.
+@[9-10](The version is set by a build script)
+@[12-13](In main we first create an instance of our internal service)
+@[14-20](Then we create a configuration for it)
+@[22](Now we finally create the official micro service)
+@[23-25](And run it hopefully without any error)
 
 ---
 
