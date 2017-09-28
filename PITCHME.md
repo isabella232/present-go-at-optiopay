@@ -13,7 +13,7 @@
 - We manage money and private data |
 - Lack of auditing could kill us |
 - Lack of data privacy could kill us |
-- Security is very important |
+- Security is VERY important |
 - A dynamic language like JavaScript doesn't feel right |
 
 ---
@@ -21,9 +21,9 @@
 ## Event Sourcing With Apache Kafka
 
 - All data is stored as events |
-- Events can't be modified but current state can change due to new events |
-- Enables auditing |
-- Decouples services |
+- Events can't be modified:  state changes due to NEW events |
+- This enables auditing |
+- Persistent messaging decouples services |
 
 ---
 
