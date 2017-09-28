@@ -27,13 +27,13 @@
 
 ---
 
-## Mircro Service Framework
+## Micro Service Framework
 
 - Abstracts away reading of Kafka topics |
 - Keeps track of client position within Kafka topic |
 - Helps writing to Kafka topics |
 - Composes HTTP handlers |
-- Service implementations have to implement interfaces | 
+- Each service implements interfaces for Micro | 
 - More than 40 services built on top of Micro |
 - Most of them store current state in a PostgreSQL DB |
 
@@ -48,16 +48,17 @@
 
 ---?code=go/service.go
 
-@[1-7](the service is usually in its own package and needs some imports, too)
-@[15-22](declare the service struct including its internal data)
-@[32-44](NewService returnes a service ready to use)
-@[46-51](ServeHTTP just calls the internal HTTP router to serve the HTTP request)
-@[53-68](ProcessEvent processes a Kafka event in order to keep the state of the service up to date)
-@[95-106](forget vouchers that aren't valid anymore)
+@[1-10](the service is usually in its own package and needs some imports, too)
+@[18-24](NewService returnes a service ready to use)
+@[26-36](ProcessEvent processes a Kafka event in order to keep the state of the service up to date)
+@[38-44](remember new vouchers)
+@[46-54](count sold vouchers)
+@[56-65](forget vouchers that aren't valid anymore)
+@[67-76](return the count as JSON)
 
 ---
 
-## Further Usages Of Go
+## Further Uses Of Go
 
 - Some command line tools |
 - Most create or read CSV files |
