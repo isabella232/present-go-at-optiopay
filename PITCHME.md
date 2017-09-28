@@ -39,11 +39,12 @@
 
 ---?code=go/main.go
 
-@[9-10](The version is set by a build script)
-@[12-13](In main we first create an instance of our internal service)
-@[14-20](Then we create a configuration for it)
-@[22](Now we finally create the official micro service)
-@[23-25](And run it hopefully without any error)
+@[1-7](the main file has to be in package main and needs some imports)
+@[9-10](the version is set by a build script)
+@[12-13](in main we first create an instance of our internal service)
+@[14-23](then we create a configuration for it)
+@[25](now we finally create the official micro service)
+@[26-29](and run it hopefully without any error)
 
 ---
 
