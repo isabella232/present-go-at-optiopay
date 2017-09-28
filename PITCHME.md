@@ -46,6 +46,15 @@
 @[25](now we finally create the official micro service)
 @[26-29](and run it hopefully without any error)
 
+---?code=go/service.go
+
+@[1-7](the service is usually in its own package and needs some imports, too)
+@[15-22](declare the service struct including its internal data)
+@[32-44](NewService returnes a service ready to use)
+@[46-51](ServeHTTP just calls the internal HTTP router to serve the HTTP request)
+@[53-68](ProcessEvent processes a Kafka event in order to keep the state of the service up to date)
+@[95-106](forget vouchers that aren't valid anymore)
+
 ---
 
 ## Further Usages Of Go
