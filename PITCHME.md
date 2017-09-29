@@ -49,6 +49,7 @@
 ---?code=go/service.go
 
 @[1-10](the service is usually in its own package and needs some imports, too)
+@[12-16](the service has to remember vouchers in flight and the count)
 @[18-24](NewService returnes a service ready to use)
 @[26-36](ProcessEvent processes a Kafka event in order to keep the state of the service up to date)
 @[38-44](remember new vouchers)
