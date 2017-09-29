@@ -1,5 +1,8 @@
-# present-go-at-optiopay
-Presentation about the usage of Go at OptioPay.
+# Go @ OptioPay
+
+[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/optiopay/present-go-at-optiopay/master?grs=github&t=white)
+
+This is a presentation about the usage of Go at OptioPay.
 
 Present this repo using GitPitch with: [https://gitpitch.com/optiopay/present-go-at-optiopay](https://gitpitch.com/optiopay/present-go-at-optiopay) \
 Or including notes with: [https://gitpitch.com/optiopay/present-go-at-optiopay?n=true](https://gitpitch.com/optiopay/present-go-at-optiopay?n=true)
